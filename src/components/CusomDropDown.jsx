@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-// const options = ['Interview Questions', 'Bug Report', 'Feature Request']
+/* eslint-disable react/prop-types */
+import { useState } from "react";
+
 
 const CustomDropDown = ({ options, selectedOption, onOptionSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -107,40 +108,6 @@ const CustomDropDown = ({ options, selectedOption, onOptionSelect }) => {
   );
 };
 
-const styles = {
-  dropdown: {
-    position: "relative",
-    width: "200px",
-  },
-  dropdownHeader: {
-    padding: "10px",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
-    backgroundColor: "#fff",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    cursor: "pointer",
-  },
-  icon: {
-    marginLeft: "10px",
-  },
-  dropdownList: {
-    position: "absolute",
-    top: "100%",
-    left: "0",
-    width: "100%",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
-    backgroundColor: "#fff",
-    boxShadow: "0px 8px 16px rgba(0,0,0,0.2)",
-    zIndex: 1,
-  },
-  dropdownOption: {
-    padding: "10px",
-    borderBottom: "1px solid #eee",
-    cursor: "pointer",
-  },
-};
+
 
 export default CustomDropDown;

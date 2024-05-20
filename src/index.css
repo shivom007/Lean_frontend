@@ -26,29 +26,22 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
-/* Style the scrollbar */
 .scroll-container::-webkit-scrollbar {
-  width: 6px; /* Width of the scrollbar */
+  width: 6px;
 }
 
-/* Track */
 .scroll-container::-webkit-scrollbar-track {
-   
-  border-radius: 12px;/* Color of the track */
+  border-radius: 12px;
 }
 .scroll-container:focus::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Handle */
 .scroll-container::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 12px; /* Color of the scrollbar */
+  border-radius: 12px;
 }
 
-/* Handle on hover */
 .scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the scrollbar on hover */
+  background: #555;
 }

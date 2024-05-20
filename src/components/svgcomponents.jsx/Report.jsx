@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 
 const Report = ({handleFormShow,selectedForm}) => {
