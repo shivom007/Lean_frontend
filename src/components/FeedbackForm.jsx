@@ -24,7 +24,10 @@ const FeedbackForm = ({setIsSubmitted, setMessage, handleClose}) => {
         const url = URL.createObjectURL(file);
         setImageUrls((prevUrls) => [...prevUrls, url]);
       } else {
-        setImageUrls((prevUrls) => [...prevUrls, null]);
+        alert("Please select image");
+        continue;
+        // setImageUrls((prevUrls) => [...prevUrls, null]);
+        
       }
     }
   
@@ -266,7 +269,7 @@ const FeedbackForm = ({setIsSubmitted, setMessage, handleClose}) => {
             }}
           >
             <input
-              style={{ height: "20px", width: "20px" }}
+              style={{ height: "20px", width: "20px", accentColor: "gray"  }}
               type="checkbox"
               name=""
               id=""

@@ -28,7 +28,9 @@ const SuggestionForm = ({setMessage, handleClose, setIsSubmited}) => {
         const url = URL.createObjectURL(file);
         setImageUrls((prevUrls) => [...prevUrls, url]);
       } else {
-        setImageUrls((prevUrls) => [...prevUrls, null]);
+        alert("Please select image");
+        continue;
+        // setImageUrls((prevUrls) => [...prevUrls, null]);
       }
     }
   
