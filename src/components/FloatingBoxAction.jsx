@@ -49,7 +49,7 @@ const FloatingBoxAction = ({setMessage, setIsSubmitted}) => {
           style={{
             gap: modal ? "16px" : "24px",
             display: "flex",
-            flexDirection: modal ? "column" : "row",
+            flexDirection: modal ? "column" : "row-reverse",
             marginRight: formShow ? "20px" : "0px",
           }}
         >
