@@ -32,7 +32,7 @@ const NoDisplay = ({onClick}) => {
         }}
       >
         This Website is currently developed for Desktop devices. Please do visit
-        the website in your desktop browser. 
+        the website in your desktop browser. <br /> You can still view the page by using the feature on chrome called &quot; Desktop site &quot;
         <br /> If interested in knowing the reason.
       </p>
       
