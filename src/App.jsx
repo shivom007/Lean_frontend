@@ -9,6 +9,7 @@ function App() {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [reasonDisplay, setReasonDisplay] = useState(false);
   const checkMobile = () => {
     const mobile = window.navigator.userAgentData.mobile;
     setIsMobile(mobile);
@@ -26,9 +27,9 @@ function App() {
 
   useEffect(() => {
     const intervalId = setInterval(checkMobile, 100);
-    checkMobile(); 
+    checkMobile();
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, []);
   return (
     <>
@@ -61,10 +62,8 @@ function App() {
               zIndex: "9999",
             }}
           >
-            <NoDisplay />
-            
-             {/* <Reason/> */}
-          </div>
+          { reasonDisplay ? <Reason onClick={() => setReasonDisplay(false)} /> : <NoDisplay onClick={() => setReasonDisplay(true)} />}
+          </div> 
         )}
 
         {isSubmitted && (
