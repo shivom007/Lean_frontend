@@ -5,6 +5,7 @@ import FloatingBoxAction from "./components/FloatingBoxAction";
 import SpeechBubble from "./components/SpeechBubble";
 import NoDisplay from "./components/NoDisplay";
 import Reason from "./components/Reason";
+
 function App() {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -39,12 +40,13 @@ function App() {
           flexDirection: "column",
           height: "100vh",
           width: "100vw",
-          backgroundColor: "#575656",
+          backgroundColor: "black",
         }}
       >
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
+            
           </Routes>
         </Router>
 
