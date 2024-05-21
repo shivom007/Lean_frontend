@@ -2,7 +2,7 @@
 import { useState, useRef } from "react";
 import CustomDropDown from "./CusomDropDown";
 
-const SuggestionForm = ({setMessage, handleClose, setIsSubmited}) => {
+const SuggestionForm = ({setMessage, handleClose, setIsSubmitted}) => {
   const [section, setSection] = useState("Interview Questions");
   const [details, setDetails] = useState("");
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -54,7 +54,7 @@ const SuggestionForm = ({setMessage, handleClose, setIsSubmited}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setMessage("Thanks for your valuable Suggestion!")
-    setIsSubmited(true)
+    setIsSubmitted(true)
     handleClose()
   };
 
