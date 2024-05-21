@@ -22,7 +22,7 @@ const Header = () => {
         }}
       >
         <div>
-          <h1
+          <h2
             style={{
               fontWeight: "500",
               fontFamily: "Montserrat",
@@ -36,12 +36,13 @@ const Header = () => {
                 padding: "0px 4px 0px 4px",
                 color: "black",
                 fontWeight: "600",
+                borderRadius:'2px'
               }}
             >
               PRODUCT
             </span>{" "}
             PLATFORM
-          </h1>
+          </h2>
         </div>
         <div style={{ display: "flex", gap: "32px" }}>
           <div
@@ -54,7 +55,7 @@ const Header = () => {
           >
             <h2
               style={{
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Montserrat",
                 color: "#FEFEFE80",
                 margin: 0,
@@ -64,8 +65,8 @@ const Header = () => {
             </h2>
             <svg
               width="21"
-              height="13"
-              viewBox="0 0 21 13"
+              height="12"
+              viewBox="0 0 21 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -88,7 +89,7 @@ const Header = () => {
           >
             <h2
               style={{
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Montserrat",
                 color: "#FEFEFE80",
                 margin: 0,
@@ -98,8 +99,8 @@ const Header = () => {
             </h2>
             <svg
               width="21"
-              height="13"
-              viewBox="0 0 21 13"
+              height="12"
+              viewBox="0 0 21 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >

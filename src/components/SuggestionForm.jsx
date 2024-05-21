@@ -85,8 +85,7 @@ const SuggestionForm = ({setMessage, handleClose, setIsSubmited}) => {
           fontWeight: "600",
         }}
       >
-        Let us know about the <strong style={{ color: "black" }}>Issue</strong>{" "}
-        you Suggestion right now!
+        Share your <strong style={{color:'black'}}>Suggestions</strong> with us for a chance to earn rewards!
       </h2>
       <hr
         style={{
